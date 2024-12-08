@@ -28,34 +28,35 @@ a{
     color: black;
 }
 
-.tour-details-header{
-    height: 40vh;
+.tour-details-header img {
+    filter: brightness(0.4);
 }
 
 .tour-details-header img {
     filter: brightness(0.4);
-  }
-  
-  .tour-details-header h1 {
-    color: white;
-    font-weight: 700;
-    font-size: 3em;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .tour-details-header button {
-    background-color: var(--primary-color);
-    color: white;
-    font-weight: 500;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-.tour-details-header button:hover{
-    background-color: var(--primary-color);
+.tour-details-header h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 3em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tour-details-header button {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tour-details-header button:hover {
+  color: white;
+  background-color: #11bb67;
 }
 
 p.rate{

@@ -35,7 +35,10 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     } else {
       errorDiv.innerHTML = "";
       alert("Form submitted successfully!");
-      // Here, you can proceed with form submission or AJAX call
     }
   });
   
+  fetch('../../../Pages/Newsletter/newsletter.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('newsletter-sec').innerHTML = data);
+      
