@@ -42,3 +42,5 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
       .then(response => response.text())
       .then(data => document.getElementById('newsletter-sec').innerHTML = data);
       
+      fetch("../../../pages/Nav/nav.html").then(response => response.text()).then(data => document.getElementById("nav").innerHTML = data);
+      fetch("../../../pages/Footer/footer.html").then(response => response.text()).then(data => document.getElementById("footer").innerHTML = data);

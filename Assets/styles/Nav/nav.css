@@ -13,13 +13,17 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
+.navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     background-color: white;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .logo {
