@@ -1,0 +1,64 @@
+/* start header */
+header {
+  background: url("../imgs/breadcrumb.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 45vh;
+}
+header .background {
+  background-color: rgba(14, 26, 24, 0.5411764706);
+  height: 100%;
+}
+.header-p {
+  height: 70%;
+  position: relative;
+  top: 37%;
+}
+/* may use as a general */
+.h-text-style {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+header p {
+  font-size: 18px;
+  width: 279px;
+  height: 65px;
+  line-height: 3.7;
+  position: relative;
+  top: 15%;
+  border-radius: 5px;
+  font-weight: 500;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .h-text-style {
+    font-size: 46px;
+  }
+}
+@media (max-width: 767px) {
+  .h-text-style {
+    font-size: 33px;
+  }
+  header p {
+    top: 6%;
+    width: 230px;
+    height: 70px;
+  }
+}
+.main-color {
+  color: #fff;
+}
+.first-color {
+  background-color: #11bb67;
+}
+/* end header */
+
+.btn-style {
+  margin-inline: 10px !important;
+  outline: none !important;
+  border-radius: 4px !important;
+  width: 50px !important;
+  height: 50px !important;
+  /* background-color:  !important; */
+  border: none;
+}
