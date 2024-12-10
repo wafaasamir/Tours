@@ -60,7 +60,7 @@ fetch("../../../Data/tours.json")
       const lastThreeTours = data.slice(-3);
       lastThreeTours.forEach((tour) => {
         const tourCard = document.createElement('div');
-        tourCard.classList.add('tour-card', 'col-12');
+        tourCard.classList.add('tour-card', 'col-12', 'mb-3');
         const tourCardRow = document.createElement('div');
         tourCardRow.classList.add('row');
         const tourImgDiv = document.createElement('div');
