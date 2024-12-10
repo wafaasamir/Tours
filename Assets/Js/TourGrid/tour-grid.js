@@ -36,7 +36,7 @@ function renderCards() {
         navigateToDetails(divCard.id);
       })
       divCard.innerHTML = `
-          <div class="card d-flex flex-column justify-content-between">
+          <div class="card d-flex flex-column justify-content-between" style="background-image: url(${img});">
             <div class="d-flex card-badges">
               ${discount > 0 ? `<span class="badge text-bg-success m-2 p-2">${discount}% off</span>` : ""}
               ${featured ? `<span class="featured-badge badge m-2 p-2">Featured</span>` : ""}

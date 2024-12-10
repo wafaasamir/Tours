@@ -61,7 +61,7 @@
       background-color: #11bb67;
     }
 .card{
-    background-image: url("../../imgs/tours/tour-1.jpg");
+    /* background-image: url("../../imgs/tours/tour-1.jpg"); */
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
