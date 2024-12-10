@@ -28,8 +28,8 @@ a{
     color: black;
 }
 
-.tour-details-header img {
-    filter: brightness(0.4);
+.tour-details-header{
+    height: 40vh;
 }
 
 .tour-details-header img {
@@ -40,6 +40,7 @@ a{
   color: white;
   font-weight: 700;
   font-size: 3em;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -49,6 +50,7 @@ a{
   background-color: var(--primary-color);
   color: white;
   font-weight: 500;
+  position: absolute;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -165,6 +167,11 @@ input[type= "checkbox"]{
     margin: 0 auto;
 }
 
+.proceed-button:hover{
+    background-color: #0a5d33;
+    color: white;
+}
+
 .tour-name{
     font-size: 3em;
     font-weight: bold;
@@ -177,4 +184,8 @@ input[type= "checkbox"]{
 
 .last-deals-rate svg{
     color: #ff6525;
+}
+
+.map{
+    border-radius: 2em;
 }
