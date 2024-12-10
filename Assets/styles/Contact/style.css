@@ -80,6 +80,10 @@ form textarea{
     color: white;
 }
 
+.contact-form .error{
+    font-size: 0.9em;
+}
+
 .company-contact{
     background-color: var(--primary-color);
     color: white;
@@ -90,6 +94,7 @@ form textarea{
     border-radius: 50%;
     color: var(--primary-color);
 }
+
 
 .map{
     border-radius: 2em;
