@@ -20,7 +20,7 @@ const tourLocation = document.getElementById("tour-location");
 const tourLanguages = document.getElementById("tour-language");
 const lastDealsCard = document.getElementById('last-deals-card');
 
-fetch("../../../Data/tours.json")
+fetch("../data/tours.json")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -144,7 +144,7 @@ document.querySelector('.package-form').addEventListener('submit', (e) => {
   e.preventDefault();
   if (validateForm()) {
     alert('Form is valid. Proceeding with booking.');
-    window.location.href = "../../../Pages/booking-page.html"
+    window.location.href = "../../booking.html"
   }
 });
 const validateForm = () => {
@@ -187,5 +187,5 @@ const clearValidationErrors = () => {
   errorMessageElement.textContent = '';
 };
 
-fetch("../../../pages/Nav/nav.html").then(response => response.text()).then(data => document.getElementById("nav").innerHTML = data);
-fetch("../../../pages/Footer/footer.html").then(response => response.text()).then(data => document.getElementById("footer").innerHTML = data);
+// fetch("../../nav.html").then(response => response.text()).then(data => document.getElementById("nav").innerHTML = data);
+// fetch("../../footer.html").then(response => response.text()).then(data => document.getElementById("footer").innerHTML = data);

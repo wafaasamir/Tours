@@ -1,4 +1,4 @@
-const jsonFilePath = "../../../Data/tours.json";
+const jsonFilePath = "../data/tours.json";
 const itemsPerPage = 6;
 let currentPage = 1;
 let totalItems = 0;
@@ -71,7 +71,7 @@ function renderCards() {
   }
 
   function navigateToDetails(id) {
-    window.location.href = `http://127.0.0.1:5500/Pages/TourDetails/tour-details.html?id=${id}`;
+    window.location.href = `http://127.0.0.1:5500/tour-details.html?id=${id}`;
   }
 
   function renderPagination() {
@@ -97,5 +97,5 @@ function renderCards() {
   
 fetchDataAndRender();
 
-fetch("../../../pages/Nav/nav.html").then(response => response.text()).then(data => document.getElementById("nav").innerHTML = data);
-fetch("../../../pages/Footer/footer.html").then(response => response.text()).then(data => document.getElementById("footer").innerHTML = data);
+// fetch("../../nav.html").then(response => response.text()).then(data => document.getElementById("nav").innerHTML = data);
+// fetch("../../footer.html").then(response => response.text()).then(data => document.getElementById("footer").innerHTML = data);
