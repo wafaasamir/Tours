@@ -58,7 +58,7 @@
   /* ..........section2.............. */
   .form-container {
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 15px;
   }
   .form-section {
@@ -68,12 +68,6 @@
     color: #6b6f6a;
   }
 
-  .card-container {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-  }
-
   .form-control {
     height: 2.5rem;
   }
@@ -81,6 +75,8 @@
   .payment {
     padding: 30px;
     border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin: 1rem;
   }
 
   .it-btn-primary {
@@ -98,6 +94,7 @@
 
   .card {
     border: 1px solid #d6d6d6;
+    margin: 1rem;
   }
   .card-text {
     margin: 4rem;
@@ -105,7 +102,6 @@
   }
 
   .card h1 {
-    border: 1px;
     font-size: 1.8rem;
     color: #333;
   }
