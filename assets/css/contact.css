@@ -94,3 +94,7 @@ form textarea{
     border-radius: 50%;
     color: var(--primary-color);
 }
+
+.map{
+    border-radius: 1.5em;
+}
