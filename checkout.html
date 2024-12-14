@@ -1,116 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
+    <title>BOOKING CHECKOUT</title>
+    <link rel="stylesheet" href="./assets/css/libs/all.min.css">
+    <link rel="stylesheet" href="./assets/css/libs/bootstrap.min.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
 </head>
+
 <body>
-    <section class="head-section d-flex align-items-center justify-content-center mb-5">
-        <div class="head-content">
-        <h1>BOOKING CHECKOUT</h1>
-        
+    <main class="home">
+        <div class="overlay">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="overlay-content">
+                        <h2 class="title">Booking checkout</h2>
+                    </div>
+                    <button class="btn btn-home">Home // Tour</button>
+                </div>
+            </div>
         </div>
-        <button class="  head-button position-absolute bottom-0 start-50 translate-middle-x">Home // Tour</button>
-    </section>
-<!-- section2.................................................... -->
-    <section class="form-section container">
-        <div class="row">
-
-            <div class="col-lg-7">
-                    <div class="payment">
-                            <div class=" d-flex justify-content-between ">
-                                <p class="fw-normal">Direct Bank Transfer</p>
-                                <p>_</p>
-                            </div>
-                        <div class="form-container  mb-5">
-                        <form >
-                            
-                            <label for="name" class="form-label fw-semibold">Name On Card</label>
-                            <input type="text" id="name" class="form-control" >
-                
-                            
-                            <label for="card-number" class="form-label fw-semibold">Card Number</label>
-                            <div class="d-flex align-items-center">
-                            <input type="text" id="card-number" class="form-control" >
-                            <div class="card-icons">
-                                
-                            </div>
-                            </div>
-
-
-                
-                            
-                            <div class="row">
-                            <div class="col-md-4">
-                                <label for="month" class="form-label fw-semibold">Month</label>
-                                <select id="month" class="form-control">
-                                <option>Month...</option>
-                                <option>January</option>
-                                <option>February</option>
-                                <option>March</option>
-                                <option>April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
-                                <option>September</option>
-                                <option>October</option>
-                                <option>November</option>
-                                <option>December</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="year" class="form-label fw-semibold">Year</label>
-                                <select id="year" class="form-control">
-                                <option>Year...</option>
-                                <option>...</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="Cvv" class="form-label fw-semibold">Cvv</label>
-                                <input type="text" id="Cvv" class="form-control" >
-                            </div>
-                            </div>
-                        </form>
+    </main>
+    <!-- / End main -->
+    <!-- section2.................................................... -->
+    <section class="form-section">
+        <div class="container mx-auto">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <div class="payment p-4">
+                        <div class=" d-flex justify-content-between pb-4 fw-bold">
+                            <p>Direct Bank Transfer</p>
+                            <p>-</p>
                         </div>
-                
-                        
+                        <div class="form-container mb-5 pb-4">
+                            <form>
+                                <label for="name" class="form-label fw-semibold">Name On Card</label>
+                                <input type="text" id="name" class="form-control mb-3">
+
+                                <label for="card-number" class="form-label fw-semibold">Card Number</label>
+                                <input type="text" id="card-number" class="form-control mb-3">
+
+                                <div class="row justify-content-between">
+                                    <div class="col-md-3">
+                                        <label for="month" class="form-label fw-semibold">Month</label>
+                                        <select id="month" class="form-control">
+                                            <option>Month...</option>
+                                            <option>January</option>
+                                            <option>February</option>
+                                            <option>March</option>
+                                            <option>April</option>
+                                            <option>May</option>
+                                            <option>June</option>
+                                            <option>July</option>
+                                            <option>August</option>
+                                            <option>September</option>
+                                            <option>October</option>
+                                            <option>November</option>
+                                            <option>December</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="year" class="form-label fw-semibold">Year</label>
+                                        <select id="year" class="form-control">
+                                            <option>Year...</option>
+                                            <option>1985</option>
+                                            <option>1986</option>
+                                            <option>1987</option>
+                                            <option>1988</option>
+                                            <option>1989</option>
+                                            <option>1990</option>
+                                            <option>1991</option>
+                                            <option>1992</option>
+                                            <option>1993</option>
+                                            <option>1994</option>
+                                            <option>1995</option>
+                                            <option>1996</option>
+                                            <option>1997</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="Cvv" class="form-label fw-semibold">Cvv</label>
+                                        <input type="text" id="Cvv" class="form-control">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
                         <hr>
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between py-3">
                             <p class=" fw-semibold ">Cheque Payment</p>
                             <P class="fw-semibold">+</P>
                         </div>
-                        
+
                         <hr>
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between py-3">
                             <p class="fw-semibold">PayPal</p>
                             <P class="fw-semibold">+</P>
                         </div>
                         <hr>
-                        <button class="btn it-btn-primary py-3 px-5 " type="submit">Place Order</button>
-                    </div>
-                
+                        <button class="btn it-btn-primary py-3 px-5 mt-3" type="submit">Place Order</button>
                     </div>
 
-            
-            <div class="col-lg-5 ">
-                <div class="">
-                    <div class="card text-center p-4 ">
-                        <h1 class="fw-bold  border-bottom pb-3 mb-3">You haven't booked any package Yet!</h1>
-                        <p class="text-muted mb-4">
-                        But it doesn't have to stay that way. Browse our tour packages and find something you love!
-                        </p>
-                        <button class="btn ">Back To Tour</button>
+                </div>
+
+
+                <div class="col-lg-5 ">
+                    <div class="card">
+                        <div class="card-text text-center py-4 ">
+                            <h1 class="fw-bold pb-3 mb-3">You haven't booked any package Yet!</h1>
+                            <p class="text-muted mb-4">
+                                But it doesn't have to stay that way. Browse our tour packages and find something you
+                                love!
+                            </p>
+                            <button class="btn ">Back To Tour</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <script src="./assets/js/libs/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
