@@ -13,18 +13,18 @@
       content="tours, travel, adventures, booking, destinations, explore, trips"
     />
     <meta name="author" content="Career 180 Team-3" />
-    <link rel="icon" href="../../Assets/imgs/logo.webp" type="/x-icon" />
-    <link rel="stylesheet" href="../../Assets/styles/libs/all.min.css" />
-    <link rel="stylesheet" href="../../Assets/styles/libs/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../Assets/styles/Contact/style.css" />
-    <link rel="stylesheet" href="../../Assets/styles/Newsletter/style.css" />
+    <link rel="icon" href="./assets/imgs/logo.webp" type="/x-icon" />
+    <link rel="stylesheet" href="./assets/css/libs/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/newsletter.css" />
   </head>
   <body>
-    <script src="../../Assets/Js/Contact/contact.js"></script>
-    <div id="nav"></div>
+    <nav id="nav"></nav>
+    <main>
     <section class="contact position-relative container-fluid p-0">
       <img
-        src="../../Assets/imgs/tours/breadcrumb.jpg"
+        src="./assets/imgs/tours/breadcrumb.jpg"
         alt="Can't Download Img"
         class="w-100 h-100"
       />
@@ -33,10 +33,10 @@
         Home // Contact
       </button>
     </section>
-    <section class="container py-5">
+    <section class="container mt-5">
       <div class="row my-5">
         <div class="col-md-6 me-5">
-          <form id="contact-form">
+          <form id="contact-form" class="contact-form">
             <div class="row">
               <div class="col-md-6 mb-3">
                 <input
@@ -46,6 +46,7 @@
                   id="first-name"
                   name="firs-name"
                 />
+                <div id="first-name-error-message" class="error text-danger mt-2 ps-2"></div>
               </div>
               <div class="col-md-6 mb-3">
                 <input
@@ -55,6 +56,7 @@
                   id="last-name"
                   name="last-name"
                 />
+                <div id="last-name-error-message" class="error text-danger mt-2 ps-2"></div>
               </div>
               <div class="col-md-6 mb-3">
                 <input
@@ -64,6 +66,7 @@
                   name="email"
                   id="email"
                 />
+                <div id="email-error-message" class="error text-danger mt-2 ps-2"></div>
               </div>
               <div class="col-md-6 mb-3">
                 <input
@@ -73,6 +76,7 @@
                   name="phone"
                   id="phone"
                 />
+                <div id="phone-error-message" class="error text-danger mt-2 ps-2"></div>
               </div>
               <div class="col-12 mb-3">
                 <input
@@ -82,6 +86,7 @@
                   id="subject"
                   name="subject"
                 />
+                <div id="subject-error-message" class="error text-danger mt-2 ps-2"></div>
               </div>
               <div class="col-12 mb-3">
                 <textarea
@@ -91,10 +96,10 @@
                   class="w-100 p-3 rounded"
                   rows="5"
                 ></textarea>
+                <div id="message-error-message" class="error text-danger mt-2 ps-2"></div>
               </div>
             </div>
-            <div id="errorMessage" class="text-danger my-3"></div>
-            <button type="submit" class="btn contact-btn py-4 px-5 mb-5">
+            <button type="submit" class="btn send-message-btn py-4 px-5 mb-5">
               Send Message
             </button>
           </form>
@@ -150,13 +155,13 @@
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27344.668382416163!2d31.37257652169571!3d31.051773608655004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2seg!4v1733621683561!5m2!1sen!2seg"
             width="auto" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" class="w-100 p-3"></iframe>
+            referrerpolicy="no-referrer-when-downgrade" class="rounded w-100 p-3"></iframe>
       </div>
     </section>
-    <div id="newsletter-sec"></div>
-    <div id="footer"></div>
-
-    <script src="../../Assets/Js/libs/bootstrap.bundle.min.js"></script>
-    <script src="../../Assets/Js/Contact/contact.js"></script>
+    <section id="newsletter-sec"></section>
+  </main>
+    <footer id="footer"></footer>
+    <script src="./assets/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/contact.js"></script>
   </body>
 </html>
