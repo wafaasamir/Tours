@@ -1,4 +1,4 @@
-fetch("Data/tours.json")
+fetch("assets/data/blog.json")
   .then((response) => response.json())
   .then((data) => {
     const cardsContainer = document.getElementById("cards-container");
@@ -54,7 +54,8 @@ fetch("Data/tours.json")
                   <span class="mx-2" style="color: #6b6f6a">${item.info.right.comments}</span>
               </div>
           </div>
-          <a class="description mx-3 fw-medium fs-6 text-decoration-none" style="cursor: pointer; color: black">${item.description}</a>
+          <a class="description mx-3 fw-medium fs-6 text-decoration-none" style="cursor: pointer; color: black" onmouseover="this.style.color='#11bb67'" 
+   onmouseout="this.style.color='black'">${item.description}</a>
           <div class="d-flex mx-3 gap-2" style="color: #11bb67">
             <a style="cursor: pointer; color: #11bb67" class="mb-3 text-decoration-none">${item.link.text}</a>
             ${item.link.icon}
