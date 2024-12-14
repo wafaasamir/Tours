@@ -1,4 +1,6 @@
-document.getElementById("contact-form").addEventListener("submit", function (e) {
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
     e.preventDefault();
     const firstName = document.getElementById("first-name").value.trim();
     const lastName = document.getElementById("last-name").value.trim();
@@ -6,41 +8,51 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     const phone = document.getElementById("phone").value.trim();
     const subject = document.getElementById("subject").value.trim();
     const message = document.getElementById("message").value.trim();
-    let errorMessage = "";
+    const firstNameError = document.getElementById("first-name-error-message");
+    const lastNameError = document.getElementById("last-name-error-message");
+    const emailError = document.getElementById("email-error-message");
+    const phoneError = document.getElementById("phone-error-message");
+    const subjectError = document.getElementById("subject-error-message");
+    const messageError = document.getElementById("message-error-message");
+    firstNameError.innerHTML = "";
+    lastNameError.innerHTML = "";
+    emailError.innerHTML = "";
+    phoneError.innerHTML = "";
+    subjectError.innerHTML = "";
+    messageError.innerHTML = "";
     if (!firstName) {
-      errorMessage += "First Name is required.<br>";
+      firstNameError.innerHTML = "*First Name is required.*";
     }
     if (!lastName) {
-      errorMessage += "Last Name is required.<br>";
+      lastNameError.innerHTML = "*Last Name is required.*";
     }
     if (!email) {
-      errorMessage += "Email is required.<br>";
+      emailError.innerHTML = "*Email is required.*";
     } else if (!/^\S+@\S+\.\S+$/.test(email)) {
-      errorMessage += "Email format is invalid.<br>";
+      emailError.innerHTML = "*Email format is invalid.*";
     }
     if (!phone) {
-      errorMessage += "Phone is required.<br>";
+      phoneError.innerHTML = "*Phone is required.*";
     } else if (!/^\d{10,15}$/.test(phone)) {
-      errorMessage += "Phone must be between 10-15 digits.<br>";
+      phoneError.innerHTML = "*Phone must be between 10-15 digits.*";
     }
     if (!subject) {
-      errorMessage += "Subject is required.<br>";
+      subjectError.innerHTML = "*Subject is required.*";
     }
     if (!message) {
-      errorMessage += "Message is required.<br>";
-    }
-    const errorDiv = document.getElementById("errorMessage");
-    if (errorMessage) {
-      errorDiv.innerHTML = errorMessage;
+      messageError.innerHTML = "*Message is required.*";
     } else {
-      errorDiv.innerHTML = "";
       alert("Form submitted successfully!");
     }
   });
-  
-  fetch('../../../Pages/Newsletter/newsletter.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('newsletter-sec').innerHTML = data);
-      
-      fetch("../../../pages/Nav/nav.html").then(response => response.text()).then(data => document.getElementById("nav").innerHTML = data);
-      fetch("../../../pages/Footer/footer.html").then(response => response.text()).then(data => document.getElementById("footer").innerHTML = data);
+
+fetch("../../newsletter.html")
+  .then((response) => response.text())
+  .then((data) => (document.getElementById("newsletter-sec").innerHTML = data));
+
+fetch("../../nav.html")
+  .then((response) => response.text())
+  .then((data) => (document.getElementById("nav").innerHTML = data));
+fetch("../../footer.html")
+  .then((response) => response.text())
+  .then((data) => (document.getElementById("footer").innerHTML = data));
