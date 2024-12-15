@@ -124,3 +124,10 @@ fetch("assets/data/blog.json")
   .catch((error) => {
     console.error("Error fetching data:", error);
   });
+
+fetch("../../nav.html")
+  .then((response) => response.text())
+  .then((data) => (document.getElementById("nav").innerHTML = data));
+fetch("../../footer.html")
+  .then((response) => response.text())
+  .then((data) => (document.getElementById("footer").innerHTML = data));
