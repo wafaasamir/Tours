@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "name": "Cuba Sailing Adventure",
+    "type": "Adventure",
+    "img": "../../assets/imgs/blog/blog-1.webp",
+    "description": "You should See things when visiting Japan",
+    "info": {
+      "left": {
+        "icon": "<i class='fa-regular fa-calendar-days'></i>",
+        "date": "June 14, 2024"
+      },
+      "right": {
+        "icon": "<i class='fa-regular fa-comments'></i>",
+        "comments": "12 Comments"
+      }
+    },
+    "link": {
+      "text": "Read more",
+      "icon": "<i class='fa-solid fa-arrow-right mt-2'></i>"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Cuba Sailing Adventure",
+    "type": "City Tours",
+    "img": "../../assets/imgs/blog/blog-2.webp",
+    "description": "A place where start new life with adventure travel",
+    "info": {
+      "left": {
+        "icon": "<i class='fa-regular fa-calendar-days'></i>",
+        "date": "Nov 21, 2023"
+      },
+      "right": {
+        "icon": "<i class='fa-regular fa-comments'></i>",
+        "comments": "06 Comments"
+      }
+    },
+    "link": {
+      "text": "Read more",
+      "icon": "<i class='fa-solid fa-arrow-right mt-2'></i>"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Cuba Sailing Adventure",
+    "type": "Adventure",
+    "img": "../../assets/imgs/blog/blog-3.webp",
+    "description": "You should See things when visiting Japan",
+    "info": {
+      "left": {
+        "icon": "<i class='fa-regular fa-calendar-days'></i>",
+        "date": "April 08, 2024"
+      },
+      "right": {
+        "icon": "<i class='fa-regular fa-comments'></i>",
+        "comments": "09 Comments"
+      }
+    },
+    "link": {
+      "text": "Read more",
+      "icon": "<i class='fa-solid fa-arrow-right mt-2'></i>"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Cuba Sailing Adventure",
+    "type": "City Tours",
+    "img": "../../assets/imgs/blog/blog-4.webp",
+    "description": "A place where start new life with adventure travel",
+    "info": {
+      "left": {
+        "icon": "<i class='fa-regular fa-calendar-days'></i>",
+        "date": "May 19, 2024"
+      },
+      "right": {
+        "icon": "<i class='fa-regular fa-comments'></i>",
+        "comments": "21 Comments"
+      }
+    },
+    "link": {
+      "text": "Read more",
+      "icon": "<i class='fa-solid fa-arrow-right mt-2'></i>"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Cuba Sailing Adventure",
+    "type": "Adventure",
+    "img": "../../assets/imgs/blog/blog-5.webp",
+    "description": "You should See things when visiting Japan",
+    "info": {
+      "left": {
+        "icon": "<i class='fa-regular fa-calendar-days'></i>",
+        "date": "August 21, 2023"
+      },
+      "right": {
+        "icon": "<i class='fa-regular fa-comments'></i>",
+        "comments": "13 Comments"
+      }
+    },
+    "link": {
+      "text": "Read more",
+      "icon": "<i class='fa-solid fa-arrow-right mt-2'></i>"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Cuba Sailing Adventure",
+    "type": "Adventure",
+    "img": "../../assets/imgs/blog/blog-6.webp",
+    "description": "You should See things when visiting Japan",
+    "info": {
+      "left": {
+        "icon": "<i class='fa-regular fa-calendar-days'></i>",
+        "date": "March 08, 2024"
+      },
+      "right": {
+        "icon": "<i class='fa-regular fa-comments'></i>",
+        "comments": "13 Comments"
+      }
+    },
+    "link": {
+      "text": "Read more",
+      "icon": "<i class='fa-solid fa-arrow-right mt-2'></i>"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Cuba Sailing Adventure",
+    "type": "City Tours",
+    "img": "../../assets/imgs/blog/blog-7.webp",
+    "description": "A place where start new life with adventure travel",
+    "info": {
+      "left": {
+        "icon": "<i class='fa-regular fa-calendar-days'></i>",
+        "date": "May 19, 2024"
+      },
+      "right": {
+        "icon": "<i class='fa-regular fa-comments'></i>",
+        "comments": "21 Comments"
+      }
+    },
+    "link": {
+      "text": "Read more",
+      "icon": "<i class='fa-solid fa-arrow-right mt-2'></i>"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Cuba Sailing Adventure",
+    "type": "Adventure",
+    "img": "../../assets/imgs/blog/blog-8.webp",
+    "description": "You should See things when visiting Japan",
+    "info": {
+      "left": {
+        "icon": "<i class='fa-regular fa-calendar-days'></i>",
+        "date": "August 21, 2023"
+      },
+      "right": {
+        "icon": "<i class='fa-regular fa-comments'></i>",
+        "comments": "13 Comments"
+      }
+    },
+    "link": {
+      "text": "Read more",
+      "icon": "<i class='fa-solid fa-arrow-right mt-2'></i>"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Cuba Sailing Adventure",
+    "type": "Adventure",
+    "img": "../../assets/imgs/blog/blog-9.webp",
+    "description": "You should See things when visiting Japan",
+    "facilities": "",
+    "info": {
+      "left": {
+        "icon": "<i class='fa-regular fa-calendar-days'></i>",
+        "date": "March 08, 2024"
+      },
+      "right": {
+        "icon": "<i class='fa-regular fa-comments'></i>",
+        "comments": "13 Comments"
+      }
+    },
+    "link": {
+      "text": "Read more",
+      "icon": "<i class='fa-solid fa-arrow-right mt-2'></i>"
+    }
+  }
+]
