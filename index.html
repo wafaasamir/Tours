@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="../../Assets/styles/HomePage/style.css" />
+    <script src="./assets/js/homepage.js "></script>
+    <script src="./assets/js/nav.js "></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./assets/css/libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/libs/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/homepage.css" />
+    
   </head>
   <body>
-    <script src="../../Assets/Js/HomePage/homepage.js"></script>
-    <div id="nav"></div>
+    
+    <nav id="nav"></nav>
     <header class="header">
       <div class="overlay"></div>
       <div class="header-content">
@@ -16,7 +26,7 @@
         <h1 class="title">Let's Explore The World</h1>
         <div class="search-bar">
           <div class="search-field">
-            <label for="location">Location</label>
+            <label for="location"> Location</label>
             <input
               type="text"
               id="location"
@@ -35,7 +45,10 @@
             <label for="guests">Guest</label>
             <input type="text" id="guests" placeholder="Total Guests" />
           </div>
-          <button class="search-btn">🔍</button>
+          <div class="search-field">
+            <label for="search"></label>
+            <button class="search-btn">🔍</button>
+          </div>
         </div>
       </div>
     </header>
