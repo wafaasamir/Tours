@@ -185,8 +185,8 @@ a {
 /* end part two section */
 /* general classes */
 .main-color {
-  color: #fff;
+  color: #fff !important;
 }
 .first-color {
-  background-color: #11bb67;
+  background-color: #11bb67 !important;
 }

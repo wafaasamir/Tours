@@ -53,6 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+fetch("../../newsletter.html")
+  .then((response) => response.text())
+  .then((data) => (document.getElementById("newsletter-sec").innerHTML = data));
 fetch("../../nav.html")
   .then((response) => response.text())
   .then((data) => (document.getElementById("nav").innerHTML = data));
