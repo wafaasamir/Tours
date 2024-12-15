@@ -39,7 +39,7 @@
     color: #fdffff;
   }
 
-  .btn-home {
+  .btn-main {
     width: 60%;
     position: absolute;
     top: 100%;
@@ -53,6 +53,10 @@
     font-size: 18px;
     font-weight: 500;
   }
+  .btn-main:hover{
+    background-color: #12bb68;
+    color: #fff;
+   }
   /* end home sec */
 
   /* ..........section2.............. */
@@ -68,7 +72,7 @@
     color: #6b6f6a;
   }
 
-  .form-control {
+  .input-style {
     height: 2.5rem;
   }
 
@@ -85,10 +89,6 @@
     background-color: #11bb67;
     border-radius: 5px;
   }
-  .it-btn-primary:hover {
-    background-color: #ff6525;
-    transition-duration: 0.3s;
-  }
 
   /* ............. */
 
@@ -97,8 +97,8 @@
     margin: 1rem;
   }
   .card-text {
-    margin: 4rem;
-    border-block: 2px dotted #11bb67 !important;
+    margin: 5rem;
+    border-block: 2px dotted #11bb67;
   }
 
   .card h1 {
@@ -117,6 +117,10 @@
     padding: 13px 20px;
     border-radius: 5px;
     background-color: #11bb67;
+  }
+  .form-section .btn:hover {
+    background-color: #ff6525;
+    transition-duration: 0.3s;
   }
 
   /* media */

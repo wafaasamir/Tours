@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./assets/css/libs/bootstrap.min.css">
 
     <link rel="stylesheet" href="./assets/css/checkout.css">
+    <link rel="stylesheet" href="./assets/css/newsletter.css">
 </head>
 
 <body>
+    <nav id="nav"></nav>
     <main class="home">
         <div class="overlay">
             <div class="row">
@@ -19,7 +21,7 @@
                     <div class="overlay-content">
                         <h2 class="title">Booking checkout</h2>
                     </div>
-                    <button class="btn btn-home">Home // Tour</button>
+                    <button class="btn btn-main">Home // Tour</button>
                 </div>
             </div>
         </div>
@@ -31,22 +33,22 @@
             <div class="row justify-content-between">
                 <div class="col-lg-7">
                     <div class="payment p-4 ">
-                        <div class=" d-flex justify-content-evenly pb-4 fw-bold">
+                        <div class=" d-flex justify-content-between pb-4 fw-bold">
                             <p>Direct Bank Transfer</p>
                             <p>-</p>
                         </div>
                         <div class="form-container mb-5 pb-4">
                             <form>
                                 <label for="name" class="form-label fw-semibold">Name On Card</label>
-                                <input type="text" id="name" class="form-control mb-3">
+                                <input type="text" id="name" class="form-control input-style mb-3">
 
                                 <label for="card-number" class="form-label fw-semibold">Card Number</label>
-                                <input type="text" id="card-number" class="form-control mb-3">
+                                <input type="text" id="card-number" class="form-control input-style mb-3">
 
                                 <div class="row justify-content-between">
                                     <div class="col-md-3">
                                         <label for="month" class="form-label fw-semibold">Month</label>
-                                        <select id="month" class="form-control">
+                                        <select id="month" class="form-control input-style">
                                             <option>Month...</option>
                                             <option>January</option>
                                             <option>February</option>
@@ -110,21 +112,23 @@
 
                 <div class="col-lg-5 ">
                     <div class="card">
-                        <div class="card-text text-center py-4 ">
+                        <div class="card-text text-center my-5 py-3">
                             <h1 class="fw-bold pb-3 mb-3">You haven't booked any package Yet!</h1>
                             <p class="text-muted mb-4">
                                 But it doesn't have to stay that way. Browse our tour packages and find something you
                                 love!
                             </p>
-                            <button class="btn ">Back To Tour</button>
+                            <button class="btn">Back To Tour</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <section id="newsletter-sec"></section>
+    <footer id="footer"></footer>
     <script src="./assets/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/checkout.js"></script>
 </body>
 
 </html>
