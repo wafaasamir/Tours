@@ -39,7 +39,7 @@
     color: #fdffff;
   }
 
-  .btn-home {
+  .btn-main {
     width: 60%;
     position: absolute;
     top: 100%;
@@ -53,6 +53,10 @@
     font-size: 18px;
     font-weight: 500;
   }
+   .btn-main:hover{
+    background-color: #12bb68;
+    color: #fff;
+   }
   /* end home sec */
   /* start places sec */
   .places .cards .card {
