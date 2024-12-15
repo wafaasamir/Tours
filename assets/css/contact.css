@@ -64,15 +64,24 @@ form textarea{
     border: 1px solid var(--secondary-color);
 }
 
-.form .contact-btn:hover {
+.form .send-message-btn:hover {
   background-color: white;
   color: #11bb67;
    border: #11bb67 1px solid;
 }
 
-.contact-btn{
+.contact-form .send-message-btn{
     background-color: var(--primary-color);
     color: white;
+}
+
+.contact-form .send-message-btn:hover{
+    background-color: #0a5d33;
+    color: white;
+}
+
+.contact-form .error{
+    font-size: 0.9em;
 }
 
 .company-contact{
@@ -84,4 +93,8 @@ form textarea{
     background-color: white;
     border-radius: 50%;
     color: var(--primary-color);
+}
+
+.map{
+    border-radius: 1.5em;
 }
