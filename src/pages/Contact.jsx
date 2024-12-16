@@ -1,22 +1,11 @@
 import React from 'react'
 import '../styles/contact.css'
+import Breadcrumb from '../shared/breadcrumb/Breadcrumb'
 
 function ContactPage() {
   return (
-    <>
-      <nav id="nav"></nav>
     <main>
-    <section class="contact position-relative container-fluid p-0">
-      <img
-        src="./assets/imgs/tours/breadcrumb.jpg"
-        alt="Can't Download Img"
-        class="w-100 h-100"
-      />
-      <h1 class="position-absolute text-center text-uppercase">contact us</h1>
-      <button type="button" class="btn position-absolute py-3 px-4">
-        Home // Contact
-      </button>
-    </section>
+      <Breadcrumb title = "contact us" buttonText="Contact"/>
     <section class="container mt-5">
       <div class="row my-5">
         <div class="col-md-6 me-5">
@@ -139,13 +128,11 @@ function ContactPage() {
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27344.668382416163!2d31.37257652169571!3d31.051773608655004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2seg!4v1733621683561!5m2!1sen!2seg"
             width="auto" height="450" style={{border:0}} allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" class="map w-100 p-3"></iframe>
+            referrerpolicy="no-referrer-when-downgrade" class="map w-100 p-3" title='map'></iframe>
       </div>
     </section>
-    <section id="newsletter-sec"></section>
+    {/* news letter component */}
   </main>
-    <footer id="footer"></footer>
-    </>
   )
 }
 

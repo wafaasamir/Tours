@@ -1,9 +1,9 @@
 import React from "react";
-import ContactPage from "./pages/ContactPage";
+import Contact from "./pages/Contact";
 function App() {
   return (
     <div className="App">
-      <ContactPage />
+      <Contact />
     </div>
   );
 }
