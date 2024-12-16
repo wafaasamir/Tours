@@ -1,9 +1,12 @@
 import React from "react";
-import Contact from "./pages/Contact";
+import Destination from "./pages/Destination";
+// import Destination from "./pages/Destination";
 function App() {
   return (
     <div className="App">
-      <Contact />
+      {/* <Contact /> */}
+      <Destination/>
+
     </div>
   );
 }
