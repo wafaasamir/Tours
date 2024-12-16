@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #11bb67;
+    --secondary-color: #D3D4D2;
+    --font-family: 'Arial', sans-serif;
+    --font-size: 16px;
+    }
+    
+    .green-color{
+        color: var(--primary-color);
+    }
+    
+    .orange-color{
+        color: #ff6525;;
+    }
+    
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact{
+        height: 40vh;
+    }
+
+.contact img {
+    filter: brightness(0.4);
+}
+
+.contact h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 3em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact button {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact button:hover {
+  color: white;
+  background-color: #11bb67;
+}
+
+form input,
+form textarea{
+    border: 1px solid var(--secondary-color);
+}
+
+.form .send-message-btn:hover {
+  background-color: white;
+  color: #11bb67;
+   border: #11bb67 1px solid;
+}
+
+.contact-form .send-message-btn{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contact-form .send-message-btn:hover{
+    background-color: #0a5d33;
+    color: white;
+}
+
+.contact-form .error{
+    font-size: 0.9em;
+}
+
+.company-contact{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.company-contact .icon{
+    background-color: white;
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+.map{
+    border-radius: 1.5em;
+}
