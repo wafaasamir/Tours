@@ -142,7 +142,7 @@ document.querySelector('.package-form').addEventListener('submit', (e) => {
   e.preventDefault();
   if (validateForm()) {
     alert('Form is valid. Proceeding with booking.');
-    window.location.href = "../../booking-page.html"
+    window.location.href = "../../booking.html"
   }
 });
 const validateForm = () => {
