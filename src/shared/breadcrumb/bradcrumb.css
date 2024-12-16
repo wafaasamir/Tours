@@ -11,8 +11,8 @@
   transform: translate(-50%, -50%);
 }
 
-.breadcrumb button {
-  background-color: var(#11bb67);
+.breadcrumb button{
+  background-color: #11bb67;
   color: white;
   font-weight: 500;
   top: 100%;
