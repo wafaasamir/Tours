@@ -49,14 +49,14 @@ footer {
 }
 
 .footer-section ul li a {
-  color: #ccc;
+  color: #ccc !important;
   text-decoration: none;
   line-height: 1.8;
   transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #00d084;
+  color: #00d084 !important;
 }
 
 .social-icons a {
@@ -71,7 +71,6 @@ footer {
   color: #00d084;
 }
 
-/* Newsletter Section */
 .footer-section.newsletter input {
   padding: 10px;
   width: 100%;
@@ -96,7 +95,6 @@ footer {
   background-color: #00a76d;
 }
 
-/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   font-size: 12px;
@@ -120,14 +118,14 @@ footer {
 }
 
 .footer-bottom a {
-  color: #ccc;
+  color: #ccc !important;
   text-decoration: none;
   margin: 0 5px;
   transition: color 0.3s ease;
 }
 
 .footer-bottom a:hover {
-  color: #00d084;
+  color: #00d084 !important;
 }
 
 .scroll-up {
@@ -176,7 +174,6 @@ footer {
   }
 }
 
-/* Mobile Devices (480px and below) */
 @media (max-width: 480px) {
   .footer-section {
     min-width: 100%;
@@ -201,7 +198,6 @@ footer {
   }
 }
 
-/* Small Mobile Devices (320px and below) */
 @media (max-width: 320px) {
   footer {
     padding: 20px 10px;

@@ -8,6 +8,7 @@ import Map from '../Components/Map/Map'
 import TourInfoCard from '../Components/TourInfoCard/TourInfoCard'
 import LastDealsTours from '../Components/LastDealsTours/LastDealsTours'
 import BookingPackageForm from '../Components/BookinkgPackageForm/BookingPackageForm'
+import Newsletter from "../shared/newsletter/Newsletter";
 
 const TourDetails = () => {
   const { tourId } = useParams();
@@ -25,13 +26,13 @@ const TourDetails = () => {
   return (
     <>
         <Breadcrumb title={tourDetails.name} buttonText={"Tour"}/>
-        <section className="mt-5">
+        <section className="mt-5 pt-4">
         <div className="container-md p-md-5">
           <div className="row">
             <div className="col-md-8 tour-details-left">
               <TourDetailsInfo tourDetails={tourDetails}/>
               <div>
-                <h3>Location</h3>
+                <h3 className="fw-bold">Location</h3>
                 <div>
                   <Map />
                 </div>
@@ -47,6 +48,7 @@ const TourDetails = () => {
           </div>
         </div>
         </section>
+        <Newsletter />
     </>
   );
 };

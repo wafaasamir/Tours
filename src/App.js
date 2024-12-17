@@ -1,9 +1,10 @@
 import React from "react";
+import MainNav from "./shared/header/MainNav";
+import Footer from "./shared/footer/Footer";
 import AppRoutes from "./routes/AppRoutes";
 // import Testimonials from "./Components/HomePage/Testimonials";
 // import BlogSection from "./Components/HomePage/BlogSection";
 // import SpecialOffer from "./Components/HomePage/SpecialOffer";
-
 // import MainNav from "./shared/header/MainNav";
 // import HomePageHeader from "./Components/HomePage/HomePageHeader";
 // import TopDestinations from "./Components/HomePage/TopDestinations";
@@ -15,10 +16,14 @@ import AppRoutes from "./routes/AppRoutes";
 // import Destination from "./pages/Destination";
 // import Contact from "./pages/Contact";
 // import TourGrid from "./pages/TourGrid";
+
+
 function App() {
   return (
     <div className="App">
+      <MainNav />
       <AppRoutes />
+
       {/* <Contact /> */}
       {/* <Destination /> */}
       {/* <TourGrid />  */}
@@ -33,6 +38,9 @@ function App() {
       {/* <Testimonials/> */}
       {/* <Footer/> */}
       {/* <BlogSection/> */}
+
+      <Footer />
+
     </div>
   );
 }

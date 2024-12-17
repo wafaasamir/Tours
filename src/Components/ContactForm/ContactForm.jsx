@@ -84,14 +84,13 @@ function ContactForm() {
   };
 
   return (
-    <form id="contact-form" className={`${styles.contactForm}`} onSubmit={handleSubmit}>
+    <form className={`${styles.contactForm}`} onSubmit={handleSubmit}>
       <div className="row">
         <div className="col-md-6 mb-3">
           <input
             type="text"
             placeholder="First Name: "
             className="w-100 p-3 rounded"
-            id="first-name"
             name="firstName"
             value={formData.firstName}
             onChange={handleInputChange}
@@ -105,7 +104,6 @@ function ContactForm() {
             type="text"
             placeholder="Last Name: "
             className="w-100 p-3 rounded"
-            id="last-name"
             name="lastName"
             value={formData.lastName}
             onChange={handleInputChange}
@@ -120,7 +118,6 @@ function ContactForm() {
             placeholder="Email Address: "
             className="w-100 p-3 rounded"
             name="email"
-            id="email"
             value={formData.email}
             onChange={handleInputChange}
           />
@@ -134,7 +131,6 @@ function ContactForm() {
             placeholder="Phone: "
             className="w-100 p-3 rounded"
             name="phone"
-            id="phone"
             value={formData.phone}
             onChange={handleInputChange}
           />
@@ -147,7 +143,6 @@ function ContactForm() {
             type="text"
             placeholder="Subject: "
             className="w-100 p-3 rounded"
-            id="subject"
             name="subject"
             value={formData.subject}
             onChange={handleInputChange}
@@ -159,7 +154,6 @@ function ContactForm() {
         <div className="col-12 mb-3">
           <textarea
             name="message"
-            id="message"
             placeholder="Write a message..."
             className="w-100 p-3 rounded"
             rows="5"
@@ -167,7 +161,7 @@ function ContactForm() {
             onChange={handleInputChange}
           ></textarea>
           {errorMessages.message && (
-            <div id="first-name-error-message" className= {`${styles.error} text-danger mt-2 ps-2`}>{errorMessages.message}</div>
+            <div className= {`${styles.error} text-danger mt-2 ps-2`}>{errorMessages.message}</div>
           )}
         </div>
       </div>
