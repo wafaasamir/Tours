@@ -12,6 +12,10 @@
     margin: 0 5px;
 }
 
+ul{
+    list-style: none;
+}
+
 p.rate{
     color: #ff6525;
 }
