@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/contact.css'
 import Breadcrumb from '../shared/breadcrumb/Breadcrumb'
 import ContactForm from '../Components/ContactForm/ContactForm'
 import ContactInfo from '../Components/ContactInfo/ContactInfo'
@@ -9,21 +8,17 @@ function ContactPage() {
   return (
     <main>
       <Breadcrumb title = "contact us" buttonText="Contact"/>
-    <section class="container mt-5">
-      <div class="row my-5">
-        <div class="col-md-6 me-5">
-          <ContactForm />
-        </div>
-        <div class="col-md-4 company-contact rounded ms-md-5 p-4 h-75">
+      <section className="container mt-5">
+        <div className="row my-5">
+          <div className="col-md-6 me-5">
+            <ContactForm />
+          </div>
           <ContactInfo />
         </div>
-      </div>
-      <div>
         <Map />
-      </div>
-    </section>
-    {/* news letter component */}
-  </main>
+      </section>
+      {/* news letter component */}
+    </main>
   )
 }
 
