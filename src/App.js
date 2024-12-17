@@ -1,13 +1,13 @@
 import React from "react";
-import Destination from "./pages/Destination";
+// import Destination from "./pages/Destination";
 // import Contact from "./pages/Contact";
-// import TourGrid from "./pages/TourGrid";
+import ToursGrid from "./pages/ToursGrid";
 function App() {
   return (
     <div className="App">
       {/* <Contact /> */}
-      <Destination />
-      {/* <TourGrid />  */}
+      {/* <Destination /> */}
+      <ToursGrid /> 
     </div>
   );
 }
