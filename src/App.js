@@ -1,12 +1,16 @@
 import React from "react";
 import AppRoutes from "./routes/AppRoutes";
+// import Testimonials from "./Components/HomePage/Testimonials";
+// import BlogSection from "./Components/HomePage/BlogSection";
+// import SpecialOffer from "./Components/HomePage/SpecialOffer";
 
 // import MainNav from "./shared/header/MainNav";
-// import TopDestinations from "./Components/HomePage/TopDestinations";
 // import HomePageHeader from "./Components/HomePage/HomePageHeader";
+// import TopDestinations from "./Components/HomePage/TopDestinations";
 // import AboutCompany from "./Components/HomePage/AboutCompany";
 // import FeaturedTours from "./Components/HomePage/FeaturedTours";
 // import TravelSection from "./Components/HomePage/TravelSection";
+// import WhyChooseUs from "./Components/HomePage/WhyChooseUs";
 // import Footer from "./shared/footer/Footer";
 // import Destination from "./pages/Destination";
 // import Contact from "./pages/Contact";
@@ -19,12 +23,16 @@ function App() {
       {/* <Destination /> */}
       {/* <TourGrid />  */}
       {/* <MainNav/> */}
-      {/* <Footer/> */}
       {/* <HomePageHeader/> */}
       {/* <TopDestinations/> */}
       {/* <AboutCompany/> */}
       {/* <FeaturedTours/> */}
       {/* <TravelSection/> */}
+      {/* <WhyChooseUs/> */}
+      {/* <SpecialOffer/> */}
+      {/* <Testimonials/> */}
+      {/* <Footer/> */}
+      {/* <BlogSection/> */}
     </div>
   );
 }
