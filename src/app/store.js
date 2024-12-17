@@ -1,7 +1,7 @@
-// import { configureStore } from "@reduxjs/toolkit";
-// import postsSlice from "../features/posts/postsSlice";
-// export default configureStore({
-//   reducer: {
-//     postsData: postsSlice
-//   },
-// });
+import { configureStore } from "@reduxjs/toolkit";
+import toursSlice from "../features/tours/toursSlice";
+export default configureStore({
+  reducer: {
+    toursData: toursSlice
+  },
+});

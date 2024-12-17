@@ -1,3 +1,7 @@
+.breadcrumb{
+  height: 40vh;
+}
+
 .breadcrumb img {
     filter: brightness(0.4);
 }

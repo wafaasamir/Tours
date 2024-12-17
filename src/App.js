@@ -1,9 +1,10 @@
 import React from "react";
-import Contact from "./pages/Contact";
+import AppRoutes from "./routes/AppRoutes";
+
 function App() {
   return (
     <div className="App">
-      <Contact />
+      <AppRoutes />
     </div>
   );
 }
