@@ -1,6 +1,6 @@
 import React from "react";
-import "../../styles/footer.css";
-import logo from "../../assets/images/logo.webp";
+import "../../styles/footer.css"; 
+import logo from "../../assets/images/logo.webp"; 
 
 const Footer = () => {
   return (
