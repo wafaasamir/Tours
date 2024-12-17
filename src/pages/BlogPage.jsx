@@ -1,11 +1,16 @@
 import React from "react";
-// import { BrowserRouter } from "react-router-dom";
 import BlogCard from "../Components/blogscards/BlogCard";
 import "../styles/blog.css";
+import Breadcrumb from "../shared/breadcrumb/Breadcrumb";
+import Newsletter from "../shared/newsletter/Newsletter";
 
 function BlogPage() {
-  return (    
+  return (
+    <>
+      <Breadcrumb buttonText={"Blog"} title={"BLOG STANDARD"}/>
       <BlogCard />
+      <Newsletter />
+    </>
   );
 }
 

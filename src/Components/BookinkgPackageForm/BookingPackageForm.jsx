@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import styles from './BookingPageForm.module.css'
 import Swal from 'sweetalert2';
+import { useNavigate } from "react-router-dom";
+
 
 function BookingPackageForm() {
+  const navigate = useNavigate();
   const [adults, setAdults] = useState(1);
   const [kids, setKids] = useState(0);
   const [children, setChildren] = useState(0);
@@ -57,8 +60,7 @@ function BookingPackageForm() {
       title: 'Form Submitted!',
       text: `Total cost: $${total.toFixed(2)}`,
     });
-
-    console.log("Form submitted with total cost:", total);
+    navigate(`/booking`);
   };
 
   const handleDateChange = (e) => {
@@ -72,7 +74,7 @@ function BookingPackageForm() {
       </h4>
       <form className="package-form p-4" onSubmit={handleSubmit}>
         <div className="d-flex justify-content-between align-items-center">
-          <label htmlFor="date">Date </label>
+          <label htmlFor="date" className="fw-bold">Date </label>
           <input
             type="date"
             name="date"
@@ -81,7 +83,7 @@ function BookingPackageForm() {
             onChange={handleDateChange}
           />
         </div>
-        <h5 className="my-4">Tickets</h5>
+        <h5 className="my-4 fw-bold">Tickets</h5>
         <div className="d-flex justify-content-between align-items-center mb-3">
           <label htmlFor="adults" className="form-label">
             Adults (18+ years)
@@ -169,7 +171,7 @@ function BookingPackageForm() {
             </button>
           </div>
         </div>
-        <h5 className="my-4">Additional Services</h5>
+        <h5 className="my-4 fw-bold">Additional Services</h5>
         <div className="form-check">
           <input
             className="form-check-input"
@@ -179,8 +181,8 @@ function BookingPackageForm() {
             onChange={handleServiceChange}
           />
           <label className="form-check-label d-flex justify-content-between" htmlFor="guide">
-            <p>Additional Guide</p>
-            <p>$120</p>
+            <p className="text-muted">Additional Guide</p>
+            <p className="text-muted">$120</p>
           </label>
         </div>
         <div className="form-check my-3">
@@ -192,8 +194,8 @@ function BookingPackageForm() {
             onChange={handleServiceChange}
           />
           <label className="form-check-label d-flex justify-content-between" htmlFor="internet">
-            <p>Internet</p>
-            <p>$120</p>
+            <p className="text-muted">Internet</p>
+            <p className="text-muted">$120</p>
           </label>
         </div>
         <div className="form-check">
@@ -205,8 +207,8 @@ function BookingPackageForm() {
             onChange={handleServiceChange}
           />
           <label className="form-check-label d-flex justify-content-between" htmlFor="photography">
-            <p>Photography</p>
-            <p>$120</p>
+            <p className="text-muted">Photography</p>
+            <p className="text-muted">$120</p>
           </label>
         </div>
         <div className={`${styles.totalCostPart} my-4`}>

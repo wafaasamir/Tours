@@ -47,9 +47,9 @@ function LastDealsTours() {
               ))}
             </div>
             <Link to={`/tour-details/${tour.id}`} className={styles.tourLink}>
-                    <h6>{tour.name}</h6>
+                    <h6 className="m-0 fw-bold">{tour.name}</h6>
             </Link>
-            <p>From <span className={styles.greenColor}>${tour.price}</span></p>
+            <p className="text-muted">From <span className={styles.greenColor}>${tour.price}</span></p>
           </div>
         </div>
       ))}

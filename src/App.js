@@ -1,12 +1,14 @@
 import React from "react";
-// import DestinationDetails from "./pages/DestinationDetailsPage";
-import BlogPage from "./pages/BlogPage";
+import MainNav from "./shared/header/MainNav";
+import Footer from "./shared/footer/Footer";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
     <div className="App">
-      {/* <DestinationDetails /> */}
-      <BlogPage />
+      <MainNav />
+      <AppRoutes />
+      <Footer />
     </div>
   );
 }

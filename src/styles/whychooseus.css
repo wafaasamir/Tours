@@ -1,0 +1,185 @@
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    margin: 1.5rem 0;
+    text-transform: capitalize;
+  }
+  
+  .why-choose-us {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  .why-choose-us-content {
+    max-width: 40%;
+    flex: 1;
+  }
+  
+  .subheading {
+    font-size: 1.2em;
+    color: #ff7e42;
+    font-style: italic;
+    margin: 15px 0;
+  }
+  
+  .subheading h2 {
+    font-size: 2.5em;
+    color: #000;
+    margin: 25px 0;
+  }
+  
+  .description {
+    color: #6c757d;
+    margin: 30px 0;
+  }
+  
+  .why-choose-us-features {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Wrap feature items on smaller screens */
+  }
+  
+  .feature-item {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(50% - 20px); /* Allow 2 items per row, with margin */
+    margin-bottom: 20px; /* Add space between rows */
+  }
+  
+  .feature-item .icon {
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 10px;
+    color: #ff7e42;
+  }
+  
+  .discover-more {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .discover-more:hover {
+    background-color: #218838;
+  }
+  
+  .why-choose-us .image-container {
+    position: relative;
+    max-width: 45%;
+    flex-shrink: 0;
+  }
+  
+  .main-image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats-box {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateY(50%);
+  }
+  
+  .stats-value {
+    font-size: 1.8em;
+    color: #ff7e42;
+    margin: 0;
+  }
+  
+  .stats-description {
+    color: #6c757d;
+    font-size: 0.9em;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .why-choose-us {
+      flex-direction: column; /* Stack content vertically */
+      align-items: center;
+    }
+  
+    .why-choose-us-content {
+      max-width: 80%; /* Make content width responsive */
+      text-align: center; /* Center the text */
+    }
+  
+    .image-container {
+      margin-top: 20px;
+      max-width: 80%; /* Make image container responsive */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .why-choose-us {
+      padding: 30px 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .why-choose-us-content {
+      max-width: 90%; /* Allow for a bit more room on smaller screens */
+    }
+  
+    .subheading h2 {
+      font-size: 2em; /* Make heading smaller */
+    }
+  
+    .description {
+      font-size: 1em; /* Adjust description font size */
+      margin: 15px 0;
+    }
+  
+    .why-choose-us-features {
+      flex-direction: column; /* Stack feature items vertically */
+      gap: 15px;
+    }
+  
+    .feature-item {
+      max-width: 100%; /* Ensure feature items occupy full width */
+      margin-bottom: 20px; /* Add space between items */
+    }
+  
+    .discover-more {
+      padding: 10px 25px; /* Adjust button size */
+      font-size: 1.1em;
+    }
+  
+    .image-container {
+      max-width: 100%; /* Ensure image takes full width */
+    }
+  
+    .main-image {
+      border-radius: 8px; /* Adjust border radius for smaller screens */
+    }
+  
+    .stats-box {
+      bottom: 15px; /* Adjust position of stats box */
+      left: 15px;
+      padding: 10px 15px; /* Adjust padding */
+    }
+  }

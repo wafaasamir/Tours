@@ -86,7 +86,7 @@ function CommentsForm() {
 
           <button
             type="submit"
-            className="btn-style first-color btn main-color mt-3"
+            className="btn-send first-color btn main-color mt-3 p-3"
           >
             Submit comment
           </button>
