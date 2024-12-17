@@ -1,5 +1,4 @@
 import React from 'react'
-// import PlacesSection from '../Components/Destination/PlacesSection'
 import '../styles/checkout.css'
 import Breadcrumb from '../shared/breadcrumb/Breadcrumb'
 import Newsletter from '../shared/newsletter/Newsletter'

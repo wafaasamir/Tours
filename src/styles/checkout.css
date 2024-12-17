@@ -1,13 +1,6 @@
 @import 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Glass+Antiqua&display=swap" rel="stylesheet" rel="stylesheet';
 :root,
 [data-bs-theme="light"] {
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "DM Sans", sans-serif;
-  }
-
   .home {
     width: 100%;
     height: 50vh;
@@ -57,9 +50,7 @@
     background-color: #12bb68;
     color: #fff;
    }
-  /* end home sec */
 
-  /* ..........section2.............. */
   .form-container {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -90,28 +81,27 @@
     border-radius: 5px;
   }
 
-  /* ............. */
 
-  .card {
+  .booking-card {
     border: 1px solid #d6d6d6;
     margin: 1rem;
   }
-  .card-text {
+  .booking-card-text {
     margin: 5rem;
     border-block: 2px dotted #11bb67;
   }
 
-  .card h1 {
+  .booking-card h1 {
     font-size: 1.8rem;
     color: #333;
   }
 
-  .card p {
+  .booking-card p {
     font-size: 1rem;
     line-height: 1.5;
   }
 
-  .card .btn {
+  .booking-card .btn {
     color: #fff;
     font-size: 1rem;
     padding: 13px 20px;
@@ -123,7 +113,6 @@
     transition-duration: 0.3s;
   }
 
-  /* media */
   @media (max-width: 558px) {
     .overlay-content .title {
       text-transform: uppercase;

@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import "./style.css";
 import logo from "../../assets/images/homepage/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const MainNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate(`/contact`);
   };
 
   return (
@@ -49,7 +53,7 @@ const MainNav = () => {
       </ul>
 
       <div className="nav_right">
-        <button className="contact_btn">Contact Us</button>
+        <button className="contact_btn" onClick={handleClick}>Contact Us</button>
       </div>
     </nav>
   );

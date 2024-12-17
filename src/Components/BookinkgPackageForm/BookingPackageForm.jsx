@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import styles from './BookingPageForm.module.css'
 import Swal from 'sweetalert2';
+import { useNavigate } from "react-router-dom";
+
 
 function BookingPackageForm() {
+  const navigate = useNavigate();
   const [adults, setAdults] = useState(1);
   const [kids, setKids] = useState(0);
   const [children, setChildren] = useState(0);
@@ -57,8 +60,7 @@ function BookingPackageForm() {
       title: 'Form Submitted!',
       text: `Total cost: $${total.toFixed(2)}`,
     });
-
-    console.log("Form submitted with total cost:", total);
+    navigate(`/booking`);
   };
 
   const handleDateChange = (e) => {

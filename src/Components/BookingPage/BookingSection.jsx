@@ -1,7 +1,9 @@
 import React from "react";
 import "../../styles/booking.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const BookingSection = () => {
+  const navigate = useNavigate();
   return (
     // Booking Section
     <section className="form-section">
@@ -100,7 +102,7 @@ const BookingSection = () => {
                 </div>
                 <div className="row mt-4 justify-content-end text-end">
                   <div className="col-md-3">
-                    <button className="btn pay-btn">Pay Now</button>
+                    <Link className="btn pay-btn" to={"/booking-checkout"}>Pay Now</Link>
                   </div>
                 </div>
               </form>
@@ -109,13 +111,13 @@ const BookingSection = () => {
 
           {/* Empty Booking Card */}
           <div className="col-lg-5">
-            <div className="card">
-              <div className="card-text text-center my-5 py-3">
+            <div className="booking-card">
+              <div className="booking-card-text text-center my-5 py-3">
                 <h1 className="fw-bold pb-3 mb-3">You haven't booked any package yet!</h1>
                 <p className="text-muted mb-4">
                   But it doesn't have to stay that way. Browse our tour packages and find something you love!
                 </p>
-                <button className="btn">Back To Tour</button>
+                <button className="btn" onClick={() => navigate(-1)}>Back To Tour</button>
               </div>
             </div>
           </div>

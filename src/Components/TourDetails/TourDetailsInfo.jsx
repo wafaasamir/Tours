@@ -324,10 +324,10 @@ function PostDetailsCard({tourDetails}){
                 <h3 className="my-4 fw-bold">Included/Exclude</h3>
                 <div className="d-md-flex justify-content-between">
                   <div>
-                    <ul className= {`${styles.include} p-5`}>{tourDetails.include.map( inc => <li id= {inc}>{inc}</li>)}</ul>
+                    <ul className= {`${styles.include} p-5`}>{tourDetails.include.map( inc => <li key= {inc}>{inc}</li>)}</ul>
                   </div>
                   <div className="">
-                    <ul className={`${styles.exclude} p-5`}>{tourDetails.exclude.map( exc => <li id= {exc}>{exc}</li>)}</ul>
+                    <ul className={`${styles.exclude} p-5`}>{tourDetails.exclude.map( exc => <li key= {exc}>{exc}</li>)}</ul>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import PaymentMethod from './PaymentMethod';
 import '../../styles/checkout.css'
+import { Link } from 'react-router-dom';
 
 function CheckoutForm() {
   return (
@@ -52,13 +53,13 @@ function CheckoutForm() {
           </div>
 
           <div className="col-lg-5">
-            <div className="card">
-              <div className="card-text text-center my-5 py-3">
+            <div className="booking-card">
+              <div className="booking-card-text text-center my-5 py-3">
                 <h1 className="fw-bold pb-3 mb-3">You haven't booked any package Yet!</h1>
                 <p className="text-muted mb-4">
                   But it doesn't have to stay that way. Browse our tour packages and find something you love!
                 </p>
-                <button className="btn">Back To Tour</button>
+                <Link className="btn" to={"/tours"}>Back To Tour</Link>
               </div>
             </div>
           </div>
