@@ -6,13 +6,15 @@ import AppRoutes from "./routes/AppRoutes";
 // import Destination from "./pages/Destination";
 // import Contact from "./pages/Contact";
 // import TourGrid from "./pages/TourGrid";
+// import BlogPage from "./pages/BlogPage";
 
-import AppRoutes from "./routes/AppRoutes";
+
+// import AppRoutes from "./routes/AppRoutes";
 function App() {
   return (
     <div className="App">
       <AppRoutes />
-
+      {/* <BlogPage /> */}
       {/* <Contact /> */}
       {/* <Destination /> */}
       {/* <TourGrid />  */}
