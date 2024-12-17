@@ -29,8 +29,8 @@ function TourInfoCard({tourDetails}){
                         />
                       </svg>
                       <div className="d-flex flex-column ms-3">
-                        <p className="mb-0">Max Guests</p>
-                        <h5>{tourDetails.maxGuests}</h5>
+                        <p className="mb-0 text-muted">Max Guests</p>
+                        <h5 className="fw-bold">{tourDetails.maxGuests}</h5>
                       </div>
                     </div>
                     <div className="d-flex align-items-center">
@@ -47,8 +47,8 @@ function TourInfoCard({tourDetails}){
                         />
                       </svg>
                       <div className="d-flex flex-column ms-3">
-                        <p className="mb-0">Min Age</p>
-                        <h5>{tourDetails.minAge}</h5>
+                        <p className="mb-0 text-muted">Min Age</p>
+                        <h5 className="fw-bold">{tourDetails.minAge}</h5>
                       </div>
                     </div>
                     <div className="d-flex align-items-center">
@@ -65,8 +65,8 @@ function TourInfoCard({tourDetails}){
                         />
                       </svg>
                       <div className="d-flex flex-column ms-3">
-                        <p className="mb-0">Tour Location</p>
-                        <h5>{tourDetails.location}</h5>
+                        <p className="mb-0 text-muted">Tour Location</p>
+                        <h5 className="fw-bold">{tourDetails.location}</h5>
                       </div>
                     </div>
                     <div className="d-flex align-items-center">
@@ -83,8 +83,8 @@ function TourInfoCard({tourDetails}){
                         />
                       </svg>
                       <div className="d-flex flex-column ms-3">
-                        <p className="mb-0">Languages Support</p>
-                        <h5>{tourDetails.language}</h5>
+                        <p className="mb-0 text-muted">Languages Support</p>
+                        <h5 className="fw-bold">{tourDetails.language}</h5>
                       </div>
                     </div>
                   </div>
