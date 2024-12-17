@@ -13,7 +13,7 @@ function Thoughts() {
         <h2 className="mb-5">
           2 thoughts on <q>South Africa</q>
         </h2>
-        <div className="card mb-4">
+        <div className="thought-card card mb-4">
           <div className="p-4">
             <div className="d-flex gap-5">
               <div className="d-flex half-width">
@@ -45,7 +45,7 @@ function Thoughts() {
             </p>
           </div>
         </div>
-        <div className="card">
+        <div className="thought-card card">
           <div className="p-4">
             <div className="d-flex gap-5">
               <div className="d-flex half-width">

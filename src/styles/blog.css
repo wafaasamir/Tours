@@ -1,6 +1,4 @@
-/* start header */
 header {
-  /* background: url("../imgs/destination-details/breadcrumb.jpg"); */
   background-position: center !important;
   background-size: cover !important;
   height: 45vh !important;
@@ -14,7 +12,6 @@ header .background {
   position: relative !important;
   top: 37% !important;
 }
-/* may use as a general */
 .h-text-style {
   font-size: 60px !important;
   font-weight: 700 !important;
@@ -51,7 +48,6 @@ header p {
 .first-color {
   background-color: #11bb67 !important;
 }
-/* end header */
 
 .btn-style {
   margin-inline: 10px !important;
@@ -59,7 +55,6 @@ header p {
   border-radius: 4px !important;
   width: 50px !important;
   height: 50px !important;
-  /* background-color:  !important; */
   border: none;
 }
 .btn-style.active {
@@ -67,5 +62,5 @@ header p {
   color: white;
 }
 .description:hover {
-  color: #11bb67 !important; /* Replace with your desired color */
+  color: #11bb67 !important;
 }
