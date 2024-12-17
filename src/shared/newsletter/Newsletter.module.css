@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Glass+Antiqua&display=swap");
+
+:global {
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+.newsletterSection {
+  background-color: #12bb68;
+  color: #fdffff;
+  position: relative;
+  padding: 40px 0px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.newsletterSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/newsletter/plane.png"),
+    url("../../assets/images/newsletter/umbrella.png"),
+    url("../../assets/images/newsletter/palm-tree.png");
+  background-repeat: no-repeat;
+  background-position: 0%, 50%, 100%;
+  z-index: 1;
+}
+
+.newsletterContent {
+  position: relative;
+  z-index: 2;
+}
+
+.newsletterTitle {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.newsletterLeft p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.customInput {
+  border-radius: 10px !important;
+  border: none;
+  padding-left: 1.5rem !important;
+  line-height: 4.3em !important;
+  font-size: 16px;
+  box-shadow: none;
+  position: relative;
+  z-index: 2;
+}
+
+.btnSubscribe {
+  background-color: #ff6525;
+  color: white;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 3;
+  padding: 20px 40px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px !important;
+  cursor: pointer;
+}
+
+.customInput:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.btnSubscribe:hover {
+  background-color: #12bb68;
+  transition: 0.3s;
+}
+
+/* Media Query */
+@media (min-width: 777px) and (max-width: 988px) {
+  .customInput {
+    padding-inline: 1.3rem 0rem !important;
+    line-height: 60px;
+    font-size: 15px;
+  }
+
+  .btnSubscribe {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
