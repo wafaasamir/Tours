@@ -1,4 +1,5 @@
 import React from "react";
+import AppRoutes from "./routes/AppRoutes";
 // import MainNav from "./shared/header/MainNav";
 // import Footer from "./shared/footer/Footer";
 // import Destination from "./pages/Destination";
@@ -7,7 +8,7 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-
+      <AppRoutes />
       {/* <Contact /> */}
       {/* <Destination /> */}
       {/* <TourGrid />  */}
