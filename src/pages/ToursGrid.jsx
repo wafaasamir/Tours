@@ -35,7 +35,7 @@ const ToursGrid = () => {
   return (
     <>
     <Breadcrumb title={"Tour Grid"} buttonText={"Grid"}/>
-      <section className="mt-5">
+      <section className="mt-5 pt-4">
         <div className="container-md px-md-5">
           <ToursCards tours={currentTours} onCardClick={handleCardClick} />
           <Pagination

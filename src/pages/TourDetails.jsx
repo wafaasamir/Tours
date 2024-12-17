@@ -26,7 +26,7 @@ const TourDetails = () => {
   return (
     <>
         <Breadcrumb title={tourDetails.name} buttonText={"Tour"}/>
-        <section className="mt-5">
+        <section className="mt-5 pt-4">
         <div className="container-md p-md-5">
           <div className="row">
             <div className="col-md-8 tour-details-left">
