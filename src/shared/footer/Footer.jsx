@@ -1,12 +1,11 @@
 import React from "react";
-import "../../styles/footer.css"; // تأكد من أن ملف الـ CSS موجود بنفس الاسم
-import logo from "../../assets/images/logo.webp"; // استيراد الصورة بطريقة React
+import "../../styles/footer.css";
+import logo from "../../assets/images/logo.webp";
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer-container">
-        {/* Company Info */}
         <div className="footer-section about">
           <img src={logo} alt="Travello Logo" />
           <p>
@@ -19,7 +18,6 @@ const Footer = () => {
             aliqua.
           </p>
           <div className="social-icons">
-            {/* Facebook */}
             <a
               href="https://facebook.com"
               target="_blank"
@@ -28,7 +26,6 @@ const Footer = () => {
             >
               <i className="fa fa-brands fa-facebook"></i>
             </a>
-            {/* Twitter */}
             <a
               href="https://twitter.com"
               target="_blank"
@@ -37,7 +34,6 @@ const Footer = () => {
             >
               <i className="fa fa-brands fa-twitter"></i>
             </a>
-            {/* Skype */}
             <a
               href="https://skype.com"
               target="_blank"
@@ -46,7 +42,6 @@ const Footer = () => {
             >
               <i className="fa fa-brands fa-skype"></i>
             </a>
-            {/* LinkedIn */}
             <a
               href="https://linkedin.com"
               target="_blank"
@@ -58,7 +53,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Company Links */}
         <div className="footer-section company">
           <h3>COMPANY:</h3>
           <ul>

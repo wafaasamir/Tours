@@ -43,7 +43,7 @@ function BlogCard() {
     const paginatedData = BLOG_STANDARD.slice(startIndex, endIndex);
 
     return (
-      <div className="d-flex flex-wrap container justify-content-around gap-4 mt-5">
+      <div className="d-flex flex-wrap container justify-content-around g-0 gap-4 mt-5">
         {paginatedData.map((item) => (
           <div className="card" key={item.id} style={cardStyle}>
             <img style={imgStyle} src={item.img} alt={item.name} />

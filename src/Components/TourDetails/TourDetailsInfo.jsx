@@ -41,7 +41,7 @@ function PostDetailsCard({tourDetails}){
                   <p>({tourDetails.reviwes} review)</p>
                 </div>
               </div>
-              <h2 className="tourName">{tourDetails.name}</h2>
+              <h2 className={styles.tourName}>{tourDetails.name}</h2>
               <div className="row my-4 align-items-center">
                 <div className="col-md-6 my-4">
                   <div className="d-flex justify-content-between align-items-start">
@@ -59,8 +59,8 @@ function PostDetailsCard({tourDetails}){
                         />
                       </svg>
                       <div className="d-flex flex-column ms-2">
-                        <p className="mb-0">From</p>
-                        <h5>{tourDetails.price}</h5>
+                        <p className="mb-0 text-muted">From</p>
+                        <h5 className="fw-bold">{tourDetails.price}</h5>
                       </div>
                     </div>
                     <div className="d-flex align-items-center">
@@ -80,8 +80,8 @@ function PostDetailsCard({tourDetails}){
                         />
                       </svg>
                       <div className="d-flex flex-column ms-2">
-                        <p className="mb-0">Duration</p>
-                        <h5>{tourDetails.duration}</h5>
+                        <p className="mb-0 text-muted">Duration</p>
+                        <h5 className="fw-bold">{tourDetails.duration}</h5>
                       </div>
                     </div>
                     <div className="d-flex align-items-center">
@@ -101,8 +101,8 @@ function PostDetailsCard({tourDetails}){
                         />
                       </svg>
                       <div className="d-flex flex-column ms-2">
-                        <p className="mb-0">Tour Type</p>
-                        <h5>{tourDetails.type}</h5>
+                        <p className="mb-0 text-muted">Tour Type</p>
+                        <h5 className="fw-bold">{tourDetails.type}</h5>
                       </div>
                     </div>
                   </div>
@@ -171,7 +171,7 @@ function PostDetailsCard({tourDetails}){
                 />
               </div>
               <div className="tour-overview-section mt-5">
-                <h3>Tour Overview</h3>
+                <h3 className="fw-bold">Tour Overview</h3>
                 <p className="tour-overview fw-semibold"></p>
               </div>
               <div className="tour-facilities-section row ">
@@ -186,12 +186,12 @@ function PostDetailsCard({tourDetails}){
                   <div
                     className= {`d-md-flex flex-column justify-content-between ${styles.tourFacilitiesChallenges}`}
                   >
-                    <h3 className="mb-3">Advance Facilities</h3>
+                    <h3 className="mb-3 fw-bold">Advance Facilities</h3>
                     <p
                       className="tour-facilities fw-semibold mb-4"
                     >{tourDetails.facilities}</p>
-                    <span className= {`${styles.lineSperator}`}></span>
-                    <h3 className="mb-3">Challenge</h3>
+                    <span className= {`${styles.lineSperator} my-2`}></span>
+                    <h3 className="mb-3 fw-bold">Challenge</h3>
                     <p
                       className="tour-challenge fw-semibold"
                     >{tourDetails.challenge}</p>
@@ -199,7 +199,7 @@ function PostDetailsCard({tourDetails}){
                 </div>
               </div>
               <div className="tour-amenties-section my-5">
-                <h3 className="my-4">Tour Amenties</h3>
+                <h3 className="my-4 fw-bold">Tour Amenties</h3>
                 <div className={`${styles.tourAmenties} d-md-flex flex-wrap p-2 p-md-4`}>
                   <p className="my-1">
                     <svg
@@ -321,7 +321,7 @@ function PostDetailsCard({tourDetails}){
                 </div>
               </div>
               <div className="include-exculde my-5">
-                <h3 className="my-4">Included/Exclude</h3>
+                <h3 className="my-4 fw-bold">Included/Exclude</h3>
                 <div className="d-md-flex justify-content-between">
                   <div>
                     <ul className= {`${styles.include} p-5`}>{tourDetails.include.map( inc => <li id= {inc}>{inc}</li>)}</ul>

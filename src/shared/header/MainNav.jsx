@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "../../styles/nav.css";
+import "./style.css";
 import logo from "../../assets/images/homepage/logo.png";
+import { Link } from "react-router-dom";
 
 const MainNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,22 +29,22 @@ const MainNav = () => {
       {/* Navigation Links */}
       <ul className={`nav_links ${isMenuOpen ? "nav_links--open" : ""}`}>
         <li>
-          <a href="./index.html">Home</a>
+          <Link to="./index.html">Home</Link>
         </li>
         <li>
-          <a href="./tour-grid.html">Tours</a>
+          <Link to="/tours">Tours</Link>
         </li>
         <li>
-          <a href="./destination.html">Destination</a>
+          <Link to="/destinations">Destination</Link>
         </li>
         <li>
-          <a href="./booking.html">Booking</a>
+          <Link to="/booking">Booking</Link>
         </li>
         <li>
-          <a href="./blog.html">Blog</a>
+          <Link to="/blog">Blog</Link>
         </li>
         <li>
-          <a href="./contact.html">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
 

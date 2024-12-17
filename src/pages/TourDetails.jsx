@@ -32,7 +32,7 @@ const TourDetails = () => {
             <div className="col-md-8 tour-details-left">
               <TourDetailsInfo tourDetails={tourDetails}/>
               <div>
-                <h3>Location</h3>
+                <h3 className="fw-bold">Location</h3>
                 <div>
                   <Map />
                 </div>

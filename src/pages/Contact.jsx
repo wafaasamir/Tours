@@ -9,7 +9,7 @@ function ContactPage() {
   return (
     <main>
       <Breadcrumb title = "contact us" buttonText="Contact"/>
-      <section className="container mt-5">
+      <section className="container mt-5 pt-4">
         <div className="row my-5">
           <div className="col-md-6 me-5">
             <ContactForm />
