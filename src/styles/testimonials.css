@@ -1,0 +1,113 @@
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  section{
+    margin: 1.5rem 0;
+    text-transform: capitalize;
+  }
+  
+  
+  .testimonials {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .section-title span {
+    color: #ff7e42;
+  }
+  
+  .testimonial-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Testimonial Card */
+  .testimonial-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .stars {
+    color: #f7b731; /* Star Color */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .user-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #333;
+  }
+  
+  .user-role {
+    font-size: 0.8rem;
+    color: #f86c6b; /* Role color */
+  }
+  
+  /* Decorative Images */
+  .decorative-map {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    z-index: 0;
+  }
+  
+  .decorative-tree {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    z-index: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonial-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .decorative-map {
+        top: 10px;
+        left: 10px;
+        width: 60px;
+    }
+    
+  }

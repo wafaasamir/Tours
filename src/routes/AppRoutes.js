@@ -9,13 +9,14 @@ import DestinationDetailsPage from "../pages/DestinationDetailsPage.jsx"
 import BookingPage from "../pages/BookingPage.jsx";
 import ScrollToTop from "../utils/ScrollToTop.js";
 import Checkout from "../pages/Checkout.jsx";
-
+import Homepage from "../pages/HomePage.jsx";
 
 const AppRoutes = () => {
   return (
     <>
       <ScrollToTop />
       <Routes>
+        <Route path="/" element={<Homepage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/booking" element={<BookingPage />} />
         <Route path="/booking-checkout" element={<Checkout />} />

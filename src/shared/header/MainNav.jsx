@@ -33,7 +33,7 @@ const MainNav = () => {
       {/* Navigation Links */}
       <ul className={`nav_links ${isMenuOpen ? "nav_links--open" : ""}`}>
         <li>
-          <Link to="./index.html">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/tours">Tours</Link>

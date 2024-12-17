@@ -1,0 +1,124 @@
+html{
+    scroll-behavior: smooth;
+  }
+  
+  section{
+    margin: 1.5rem 0;
+    text-transform: capitalize;
+  }
+  
+  .blog-section {
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Positioned Decorative Image */
+  .decorative-passport {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    z-index: 0;
+  }
+  
+  /* Blog Wrapper */
+  .blog-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1; /* Keeps content above the background */
+  }
+  
+  /* Blog Card */
+  .blog-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Blog Image */
+  .blog-image {
+    position: relative;
+  }
+  
+  .blog-image img {
+    width: 100%;
+    display: block;
+  }
+  
+  .blog-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  /* Blog Content */
+  .blog-content {
+    padding: 15px;
+  }
+  
+  .blog-meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .blog-meta span {
+    margin-right: 10px;
+  }
+  
+  .blog-title {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .read-more {
+    display: inline-block;
+    color: #28a745;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .blog-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .decorative-passport {
+        top: 5px;
+        left: 5px;
+        width: 70px;
+    }
+  }

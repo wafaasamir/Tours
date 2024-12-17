@@ -4,7 +4,7 @@ import breadcrumbImage from '../../assets/images/tours/breadcrumb.jpg';
 
 function Breadcrumb({ title, buttonText }) {
   return (
-    <section className={`${styles.breadcrumb} position-relative container-fluid p-0`}>
+    <section className={`${styles.breadcrumb} position-relative container-fluid p-0 m-0`}>
       <img
         src={breadcrumbImage}
         alt="Can't Download Img"
