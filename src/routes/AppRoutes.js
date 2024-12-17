@@ -1,19 +1,21 @@
-// import React from "react";
-// import { Route, Routes } from "react-router-dom";
-// import Home from "../pages/HomePage";
-// import About from "../pages/AboutPage";
-// import Contact from "../pages/ContactPage";
-// import PostDetails from "../pages/PostDetails";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Contact from "../pages/Contact.jsx";
+import ToursGrid from '../pages/ToursGrid.jsx';
+import TourDetails from "../pages/TourDetails.jsx";
+import ScrollToTop from "../utils/ScrollToTop.js";
 
-// const AppRoutes = () => {
-//   return (
-//     <Routes>
-//       <Route path="/" element={<Home />} />
-//       <Route path="/about" element={<About />} />
-//       <Route path="/contact" element={<Contact />} />
-//       <Route path= "/tours/:tourId" element= {<tourDetails /> }/>
-//     </Routes>
-//   );
-// };
+const AppRoutes = () => {
+  return (
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/tours" element={<ToursGrid />} />
+        <Route path="/tour-details/:tourId" element={<TourDetails />} />
+      </Routes>
+    </>
+  );
+};
 
-// export default AppRoutes;
+export default AppRoutes;

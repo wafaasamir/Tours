@@ -1,21 +1,26 @@
-import React from 'react'
-import './bradcrumb.css'
-import breadcrumbImage from '../../assets/images/tours/breadcrumb.jpg'
+import React from 'react';
+import styles from './BreadCrumb.module.css';
+import breadcrumbImage from '../../assets/images/tours/breadcrumb.jpg';
 
 function Breadcrumb({ title, buttonText }) {
   return (
-    <section class="breadcrumb position-relative container-fluid p-0">
+    <section className={`${styles.breadcrumb} position-relative container-fluid p-0`}>
       <img
-        src= {breadcrumbImage}
+        src={breadcrumbImage}
         alt="Can't Download Img"
-        class="w-100 h-100"
+        className="w-100 h-100"
       />
-      <h1 class="position-absolute text-center text-uppercase">{title}</h1>
-      <button type="button" class="btn position-absolute py-3 px-4">
+      <h1 className="position-absolute text-center text-uppercase">
+        {title}
+      </h1>
+      <button
+        type="button"
+        className={`${styles.button} btn position-absolute py-3 px-4`}
+      >
         Home // {buttonText}
       </button>
     </section>
-  )
+  );
 }
 
-export default Breadcrumb
+export default Breadcrumb;
