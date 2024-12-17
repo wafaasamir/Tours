@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  margin: 1.5rem 0;
+  text-transform: capitalize;
+}
+
+.travel-section {
+  position: relative;
+  background: url('../assets/images/homepage/video-bg.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-bottom: 0;
+  min-height: 60vh;
+}
+
+.travel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1;
+}
+
+.travel-header {
+  position: relative;
+  z-index: 2; 
+  width: 80%;
+  margin: 35px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.travel-header h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.start-booking {
+  background-color: #ff7e42;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.start-booking:hover {
+  background-color: #e36934;
+}
+
+.travel-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  background: #ff7e42;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.stat-item {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.stat-item h2 {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .travel-section {
+    padding: 40px 20px;
+    min-height: 50vh;
+  }
+
+  .travel-header {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .travel-header h2 {
+    font-size: 2em;
+  }
+
+  .start-booking {
+    padding: 12px 25px;
+    font-size: 0.9em;
+  }
+
+  .travel-stats {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .stat-item {
+    font-size: 1.1em;
+  }
+
+  .stat-item h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .travel-section {
+    padding: 30px 15px;
+    min-height: 40vh;
+  }
+
+  .travel-header {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .travel-header h2 {
+    font-size: 1.8em;
+  }
+
+  .start-booking {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
+
+  .travel-stats {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .stat-item {
+    font-size: 1em;
+  }
+
+  .stat-item h2 {
+    font-size: 1.5em;
+  }
+}

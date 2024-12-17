@@ -1,6 +1,6 @@
 import React from "react";
-import "../../styles/footer.css"; // تأكد من أن ملف الـ CSS موجود بنفس الاسم
-import logo from "../../assets/images/logo.webp"; // استيراد الصورة بطريقة React
+import "../../styles/footer.css"; 
+import logo from "../../assets/images/logo.webp"; 
 
 const Footer = () => {
   return (

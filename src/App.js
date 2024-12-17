@@ -1,6 +1,12 @@
 import React from "react";
 import AppRoutes from "./routes/AppRoutes";
+
 // import MainNav from "./shared/header/MainNav";
+// import TopDestinations from "./Components/HomePage/TopDestinations";
+// import HomePageHeader from "./Components/HomePage/HomePageHeader";
+// import AboutCompany from "./Components/HomePage/AboutCompany";
+// import FeaturedTours from "./Components/HomePage/FeaturedTours";
+// import TravelSection from "./Components/HomePage/TravelSection";
 // import Footer from "./shared/footer/Footer";
 // import Destination from "./pages/Destination";
 // import Contact from "./pages/Contact";
@@ -14,6 +20,11 @@ function App() {
       {/* <TourGrid />  */}
       {/* <MainNav/> */}
       {/* <Footer/> */}
+      {/* <HomePageHeader/> */}
+      {/* <TopDestinations/> */}
+      {/* <AboutCompany/> */}
+      {/* <FeaturedTours/> */}
+      {/* <TravelSection/> */}
     </div>
   );
 }
