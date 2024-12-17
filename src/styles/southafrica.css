@@ -1,8 +1,3 @@
-html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-}
-/* start header */
 header {
   background: url("../assets/images/southafrica/destination-details/breadcrumb.jpg");
   background-position: center;
@@ -18,7 +13,7 @@ header .background {
   position: relative;
   top: 37%;
 }
-/* may use as a general */
+
 .h-text-style {
   font-size: 60px;
   font-weight: 700;
@@ -49,8 +44,7 @@ header p {
     height: 70px;
   }
 }
-/* end header */
-/* start part one section */
+
 .explore-section {
 }
 .Charm {
@@ -69,7 +63,7 @@ header p {
 .half-width {
   width: 50%;
 }
-.card {
+.thought-card {
   border: 1px dashed !important;
 }
 .date-color {
@@ -107,12 +101,11 @@ header p {
 .text-erea-style:focus {
   border-color: #11bb67;
 }
-.btn-style {
+.btn-send {
   font-size: 15px;
   border-radius: 5px;
   font-weight: 500;
   transition: 0.3s;
-  height: 55px;
 }
 .btn:hover,
 .btn:focus-visible {
@@ -120,15 +113,6 @@ header p {
   color: #fff !important;
 }
 
-/* location */
-.map-hight {
-  height: 500px;
-}
-iframe {
-  height: 100%;
-}
-/* end part one section */
-/* start part two section */
 .search-input {
   height: 60px;
   outline: none;
@@ -182,8 +166,7 @@ a {
   color: #11bb67;
   font-size: 14px;
 }
-/* end part two section */
-/* general classes */
+
 .main-color {
   color: #fff !important;
 }

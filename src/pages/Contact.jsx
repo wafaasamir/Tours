@@ -3,6 +3,7 @@ import Breadcrumb from '../shared/breadcrumb/Breadcrumb'
 import ContactForm from '../Components/ContactForm/ContactForm'
 import ContactInfo from '../Components/ContactInfo/ContactInfo'
 import Map from '../Components/Map/Map'
+import Newsletter from '../shared/newsletter/Newsletter'
 
 function ContactPage() {
   return (
@@ -17,7 +18,7 @@ function ContactPage() {
         </div>
         <Map />
       </section>
-      {/* news letter component */}
+      <Newsletter />
     </main>
   )
 }

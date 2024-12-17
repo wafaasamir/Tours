@@ -32,7 +32,7 @@ function SearchForm() {
           ></textarea>
           <button
             type="submit"
-            className="btn-style first-color btn main-color mt-3 col-12"
+            className="btn-send first-color btn main-color col-12 mt-3 p-3"
           >
             Send Now
           </button>
