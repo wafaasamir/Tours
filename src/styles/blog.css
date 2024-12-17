@@ -1,0 +1,71 @@
+/* start header */
+header {
+  /* background: url("../imgs/destination-details/breadcrumb.jpg"); */
+  background-position: center !important;
+  background-size: cover !important;
+  height: 45vh !important;
+}
+header .background {
+  background-color: rgba(14, 26, 24, 0.5411764706) !important;
+  height: 100% !important;
+}
+.header-p {
+  height: 70% !important;
+  position: relative !important;
+  top: 37% !important;
+}
+/* may use as a general */
+.h-text-style {
+  font-size: 60px !important;
+  font-weight: 700 !important;
+  letter-spacing: -1px !important;
+}
+header p {
+  font-size: 18px !important;
+  width: 279px !important;
+  height: 65px !important;
+  line-height: 3.7 !important;
+  position: relative !important;
+  top: 15% !important;
+  border-radius: 5px !important;
+  font-weight: 500 !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .h-text-style {
+    font-size: 46px !important;
+  }
+}
+@media (max-width: 767px) {
+  .h-text-style {
+    font-size: 33px !important;
+  }
+  header p {
+    top: 6% !important;
+    width: 230px !important;
+    height: 70px !important;
+  }
+}
+.main-color {
+  color: #fff !important;
+}
+.first-color {
+  background-color: #11bb67 !important;
+}
+/* end header */
+
+.btn-style {
+  margin-inline: 10px !important;
+  outline: none !important;
+  border-radius: 4px !important;
+  width: 50px !important;
+  height: 50px !important;
+  /* background-color:  !important; */
+  border: none;
+}
+.btn-style.active {
+  background-color: #11bb67 !important;
+  color: white;
+}
+.description:hover {
+  color: #11bb67 !important; /* Replace with your desired color */
+}
