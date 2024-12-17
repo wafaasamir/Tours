@@ -7,6 +7,7 @@ import RecentTours from "../Components/southafrica/RecentTours";
 import Map from "../Components/Map/Map";
 import "../styles/southafrica.css";
 import Breadcrumb from "../shared/breadcrumb/Breadcrumb";
+import Newsletter from "../shared/newsletter/Newsletter";
 
 function DestinationDetails() {
   return (
@@ -31,6 +32,7 @@ function DestinationDetails() {
           </section>
         </div>
       </section>
+      <Newsletter />
     </>
   );
 }

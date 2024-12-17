@@ -8,6 +8,7 @@ import Map from '../Components/Map/Map'
 import TourInfoCard from '../Components/TourInfoCard/TourInfoCard'
 import LastDealsTours from '../Components/LastDealsTours/LastDealsTours'
 import BookingPackageForm from '../Components/BookinkgPackageForm/BookingPackageForm'
+import Newsletter from "../shared/newsletter/Newsletter";
 
 const TourDetails = () => {
   const { tourId } = useParams();
@@ -47,6 +48,7 @@ const TourDetails = () => {
           </div>
         </div>
         </section>
+        <Newsletter />
     </>
   );
 };

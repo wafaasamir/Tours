@@ -5,24 +5,23 @@ import Breadcrumb from "../shared/breadcrumb/Breadcrumb";
 import ToursCards from "../features/tours/ToursCards";
 import Pagination from "../Components/Pagination/Pagination";
 import { fetchTours } from "../features/tours/toursSlice";
+import Newsletter from "../shared/newsletter/Newsletter";
 
 const ToursGrid = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const tours = useSelector((state) => state.toursData.tours); // Adjust state path based on your Redux store
+  const tours = useSelector((state) => state.toursData.tours);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
-  // Fetch tours on component mount
   useEffect(() => {
     dispatch(fetchTours());
   }, [dispatch]);
 
   const handleCardClick = (tourId) => {
-    navigate(`/tour-details/${tourId}`); // Navigate to details page with the tour ID
+    navigate(`/tour-details/${tourId}`);
   };
 
-  // Pagination logic
   const totalItems = tours.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -36,12 +35,9 @@ const ToursGrid = () => {
   return (
     <>
     <Breadcrumb title={"Tour Grid"} buttonText={"Grid"}/>
-      {/* Cards and Pagination Section */}
       <section className="mt-5">
         <div className="container-md px-md-5">
-          {/* Render Cards */}
           <ToursCards tours={currentTours} onCardClick={handleCardClick} />
-          {/* Pagination */}
           <Pagination
             totalPages={totalPages}
             currentPage={currentPage}
@@ -49,6 +45,7 @@ const ToursGrid = () => {
           />
         </div>
       </section>
+      <Newsletter />
     </>
   );
 };
