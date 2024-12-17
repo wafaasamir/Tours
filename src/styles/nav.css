@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -163,4 +163,3 @@ body {
   pointer-events: all;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
