@@ -24,15 +24,15 @@
     background-color: #11bb67 !important;
 }
 
-.featuredBadge,
-.discountBadge{
-    font-size: 12px;
-}
-
 .dollarIcon{
     border: 1px solid #11bb67;
     border-radius: 50%;
     color: #11bb67;
+}
+
+.featuredBadge,
+.discountBadge{
+    font-size: 12px;
 }
 
 .card::before{
@@ -52,3 +52,4 @@
 .card:hover {
     transform: scale(1.05);
   }
+  
