@@ -64,3 +64,7 @@ header p {
 .description:hover {
   color: #11bb67 !important;
 }
+
+.color-main{
+  color: #11bb67;
+}

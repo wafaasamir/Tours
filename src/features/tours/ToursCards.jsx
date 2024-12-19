@@ -31,12 +31,12 @@ const ToursCards = ({ tours, onCardClick  }) => {
               {/* Card Badges */}
               <div className= {`d-flex ${styles.cardBadges}`}>
                 {discount > 0 && (
-                  <span className="badge text-bg-success m-2 p-2">
+                  <span className={`${styles.discountBadge} rounded text-bg-success m-2 p-2`}>
                     {discount}% off
                   </span>
                 )}
                 {featured && (
-                  <span className={`${styles.featuredBadge} badge m-2 p-2`}>
+                  <span className={`${styles.featuredBadge} m-2 rounded p-2`}>
                     Featured
                   </span>
                 )}

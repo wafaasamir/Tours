@@ -21,7 +21,7 @@ const typeStyle = {
   color: "#fff",
   borderRadius: "3px",
   position: "relative",
-  bottom: "55%",
+  bottom: "45%",
   fontSize: "14px",
   left: "9%",
 };
@@ -75,7 +75,7 @@ function BlogCard() {
             <div className="d-flex mx-3 gap-2" style={{ color: "#11bb67" }}>
               <Link
                 style={{ cursor: "pointer", color: "#11bb67" }}
-                className="mb-3 text-decoration-none d-flex gap-2"
+                className="mb-3 text-decoration-none d-flex gap-2 color-main"
                 to={item.link.href}
               >
                 {item.link.text}
